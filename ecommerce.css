@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1200px;
+}
+
+/* Header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5em;
+}
+.logocontainer{
+    display: flex;
+}
+.cartcontainer{
+    display: flex;
+}
+
+.logo{
+    max-height: 30%;
+    max-width: 90%;
+}
+.openmenu{
+    max-height: 30%;
+    max-width: 50%; 
+    display: none;
+}
+.closemenu{
+    max-height: 30%;
+    max-width: 50%;
+    display: none;
+}
+.cart{
+    max-height: 40%;
+    max-width: 50%;
+    margin-top: .5em;
+    margin-right: 2em;
+    cursor: pointer;
+}
+.avatar{
+    max-height: 70%;
+    max-width: 50%;
+}
+.update{
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 50%;
+    position: relative;
+    left: -2.5em;
+    height: 25px;
+    color: white;
+    padding: .2em;
+    display: none;
+}
+.list_item{
+    display: flex;
+    margin-left: 1.5em;
+}
+.list_item li{
+    list-style: none;
+    margin-left: 1.5em;
+    margin-top: .4em;
+}
+.list_item a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+.cartitem{
+    min-width: 29%;
+    background: white;
+    box-shadow: 2px 2px 10px rgb(226, 230, 226);
+    min-height: 200px;
+    position: absolute;
+    top: 6em;
+    right: 0;
+    z-index: 30;
+    display: none;
+    border-radius: 1em;
+}
+.item{
+    padding: 1em;
+    display: none;
+}
+.img_item{
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+}
+.img_item_1{
+    height: 50px;
+}
+.para_item{
+    margin: .5em 0;
+}
+.delete{
+    max-height: 25%;
+    margin: .5em 0;
+    cursor: pointer;
+}
+.add{
+    font-weight: 700;
+}
+.check_out{
+    width: 100%;
+    margin: 1em auto;
+    padding: 1em 0;
+    text-align: center;
+    border-radius: 10px;
+    background-color: hsl(26, 82%, 57%);
+    color: white;
+    border: 1px solid hsl(26, 82%, 57%);
+}
+.cart_empty{
+   left: 30%;
+    position: absolute;
+    top: 60%;
+}
+.active{
+    display: block;
+}
+.cart_header{
+    padding: 1em;
+}
+
+
+.container1{
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4em;
+    display: flex;
+    justify-content: space-between;
+}
+.image{
+    width: 60%;
+}
+.img_items{
+    overflow: hidden;
+    display: flex;
+    max-width: 80%;
+    position: relative;
+}
+.previous{
+    background-color: white;
+    padding: .5em;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    cursor: pointer;
+}
+ .next{
+    background-color: white;
+    padding: .5em;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 5%; 
+    cursor: pointer;
+}
+.content{
+    margin-left: 4em;
+    position: relative;
+    top: 4em;
+    width: 40%;
+}
+.sneakers{
+    color: hsl(26, 100%, 55%);
+    margin-bottom: .75em;
+}
+.limited{
+    margin-bottom: 1em;
+    font-size: 2.5rem;
+}
+.para{
+    margin: .85em 0;
+    font-size: 1.1rem;
+}
+.dollar_sign{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.percent{
+    background: hsl(23, 79%, 94%);
+    color: hsl(26, 82%, 57%);
+    border-radius: .35em;
+    padding: .27em .5em;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.dollar_percent{
+    text-decoration: line-through;
+    color: hsl(231, 45%, 94%);
+}
+.img1{
+   max-width: 100%; 
+    height: 70vh;
+    border-radius: 1em;
+}
+.img2{
+    max-width: 18%;
+    max-height: 50%;
+    border-radius: 1em;
+    margin-right: .8em;
+    margin-top: .7em;
+}
+.addcart{
+    display: flex;
+    margin: 2em 0;
+}
+.count{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    background: hsl(223, 64%, 98%);
+    padding: 0 1em;
+    height: 45px;
+    border-radius: .5em;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+.addtocart{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background: hsl(26, 100%, 55%);
+    border-radius: .5em;
+    height: 45px;
+    color: white;
+    margin-left: 1em;
+    cursor: pointer;
+    transition: background 0.5s ease;
+    font-size: 1.1rem;
+}
+.addtocart:hover{
+    background: hsl(25, 100%, 84%);
+}
+
+
+@media only screen and (max-width: 500px){
+    .list_item{
+        display: none;
+        position: absolute;
+        top: 0;
+        width: 70%;
+        flex-direction: column;
+        height: 100vh;
+        left: -3em;
+        background-color: white;
+        box-shadow: 2px 2px 0px rgb(226, 230, 226);
+        z-index: 1000;
+    }
+    .list_item li{
+        position: relative;
+        top: 13%;
+        left: 1.5em;
+        margin-top: 1.2em;
+        margin-left: 1em;
+    }
+    hr{
+        display: none;
+    }
+    .openmenu{
+        display: block;
+        margin-right: 1em;
+    }
+    .logo{
+        max-height: 30%;
+        max-width: 50%;
+    }
+    .para_item{
+        margin: .5em .1em;
+    }
+    .cartcontainer{
+        display: flex;
+        margin-right: -3.5em;
+    }
+    .cart{
+        max-height: 30%;
+        max-width: 50%;
+        margin-right: .5em;
+        margin-top: 0;
+    }
+    .avatar{
+        max-height: 40%;
+        max-width: 50%;
+    }
+    .update{
+        left: -1em;
+        top: -.5em;
+    }
+    .closemenu{
+        max-height: 30%;
+        max-width: 50%;
+        z-index: 10001;
+    }
+    .cartitem{
+        width: 95%;
+        background: white;
+        box-shadow: 2px 2px 0px rgb(226, 230, 226);
+        min-height: 200px;
+        position: absolute;
+        margin: 0 auto;
+        top: 7em;
+        right: 5%;
+        z-index: 30;
+    }
+    .hori{
+        display: block;
+    }
+    .container1{
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .image{
+        width: 100%;
+    }
+    .img_items{
+        overflow: hidden;
+        display: flex;
+        max-width: 100%;
+    }
+    .content{
+        position: relative;
+        top: 1em;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .img1{
+        width: 100%;
+        height: 50vh;
+        border-radius: 0;
+    }
+    .img2{
+        display: none;
+    }
+    .limited{
+        font-size: 2rem;
+    }
+    .addcart{
+        flex-direction: column;
+    }
+    .count{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .addtocart{
+        width: 90%;
+        margin: 1em  auto;
+    }
+}
